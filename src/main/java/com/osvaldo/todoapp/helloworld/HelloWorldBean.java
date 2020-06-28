@@ -1,4 +1,4 @@
-package com.osvaldo.todoapp;
+package com.osvaldo.todoapp.helloworld;
 
 public class HelloWorldBean {
     private String message;
