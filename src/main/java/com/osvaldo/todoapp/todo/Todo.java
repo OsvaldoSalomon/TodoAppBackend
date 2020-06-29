@@ -1,7 +1,6 @@
 package com.osvaldo.todoapp.todo;
 
 import java.util.Date;
-import java.util.Objects;
 
 public class Todo {
     private long id;
@@ -10,7 +9,10 @@ public class Todo {
     private Date targetDate;
     private boolean isDone;
 
+    protected Todo() {}
+
     public Todo(long id, String username, String description, Date targetDate, boolean isDone) {
+        super();
         this.id = id;
         this.username = username;
         this.description = description;
