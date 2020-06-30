@@ -1,4 +1,4 @@
-package com.osvaldo.todoapp.todo;
+package com.osvaldo.todoapp.webservices.restfulwebservices.todo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

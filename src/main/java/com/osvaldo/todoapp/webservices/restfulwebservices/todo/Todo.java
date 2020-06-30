@@ -1,4 +1,4 @@
-package com.osvaldo.todoapp.todo;
+package com.osvaldo.todoapp.webservices.restfulwebservices.todo;
 
 import java.util.Date;
 
