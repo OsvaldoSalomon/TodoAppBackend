@@ -56,17 +56,17 @@ public class Todo {
         return isDone;
     }
 
-    public void setDone(boolean done) {
-        isDone = done;
+    public void setDone(boolean isDone) {
+        this.isDone = isDone;
     }
 
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (!(o instanceof Todo)) return false;
-//        Todo todo = (Todo) o;
-//        return id == todo.id;
-//    }
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + (int) (id ^ (id >>> 32));
+		return result;
+	}
 
     @Override
     public boolean equals(Object obj) {
@@ -81,7 +81,6 @@ public class Todo {
             return false;
         return true;
     }
-
 
 
 }

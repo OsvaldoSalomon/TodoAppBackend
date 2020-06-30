@@ -9,6 +9,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import java.net.URI;
 import java.util.List;
 
+
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
 public class TodoResource {
@@ -45,9 +46,9 @@ public class TodoResource {
     public ResponseEntity<Void> createTodo(@PathVariable String username, @RequestBody Todo todo) {
         Todo todoCreated = todoService.save(todo);
 
-        URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(todoCreated.getId()).toUri();
+        URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
+                .path("/{id}").buildAndExpand(todoCreated.getId()).toUri();
 
         return ResponseEntity.created(uri).build();
     }
-
 }
