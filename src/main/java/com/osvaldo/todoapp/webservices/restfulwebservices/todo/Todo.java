@@ -3,6 +3,7 @@ package com.osvaldo.todoapp.webservices.restfulwebservices.todo;
 import java.util.Date;
 
 public class Todo {
+
     private long id;
     private String username;
     private String description;
